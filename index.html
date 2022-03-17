@@ -7,6 +7,29 @@
     <title>Inspection Project</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>INSPECTION DATA</h1>
+    <section id="inspection-basic-data">
+        <label for="ID">ID:</label>
+        <input type="number" id="ID" name="ID" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="code-system"> Code System</label>
+        <select name="code-system" id="code-system">
+            <option value="european-standard-1">European standard 1</option>
+            <option value="european-standard-2">European standard 2</option>
+            <option value="european-standard-3">European standard 3</option>
+            <option value="european-standard-4">European standard 4</option>
+        </select>
+        <br>
+        <button id="add-condition">ADD CONDITION</button>
+    </section>
+
+    <div id="inspection-details-data">
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
