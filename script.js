@@ -73,13 +73,13 @@ document.getElementById('add-condition').addEventListener('click', () => {
                 </div>
             </div>
 
-            <div class="row fs-2 ms-5 mt-5 ">
+            <div class="row fs-2 ms-5 mt-5 text-start ">
                 <div class="col-6">
-                    <label for="quant-1" class="fw-bold">QUANT 1 : </label>
+                    <label for="quant-1" class="fw-bold">QUANT 1: </label>
                     <input type="number" id="quant-1" name="quant-1" class="text-center border border-primary border-3">
                 </div>
                 <div class="col-6">
-                    <label for="quant-2" class="fw-bold">QUANT 2 : </label>
+                    <label for="quant-2" class="fw-bold">QUANT 2:</label>
                     <input type="number" id="quant-2" name="quant-2" class="text-center border border-primary border-3">
                 </div>
 
