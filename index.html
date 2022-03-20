@@ -9,29 +9,65 @@
     <title>Inspection Project</title>
 </head>
 <body>
-    <h1>INSPECTION DATA</h1>
-    <section id="inspection-basic-data">
-        <label for="ID">ID:</label>
-        <input type="number" id="ID" name="ID" required>
-        <br>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
-        <br>
-        <label for="code-system"> Code System</label>
-        <select name="code-system" id="code-system">
-            <option value="european-standard-1">European standard 1</option>
-            <option value="european-standard-2">European standard 2</option>
-            <option value="european-standard-3">European standard 3</option>
-            <option value="european-standard-4">European standard 4</option>
-        </select> 
-        <br>
-        <button id="add-condition">ADD CONDITION</button>
-    </section>
+    <!-- Basic Inspection Data -->
+    <div class="container-fluid text-center bg-light">
+        <!-- header part -->
+        <h1 class="text-primary pt-3 fs-1 fw-bold">INSPECTION DATA</h1>
 
+        <!-- getting input from the user -->
+        <div id="inspection-basic-data">
+            <div class="row fs-2">
+                <!-- input for ID  -->
+                <div class="col-sm-12 col-lg-4">
+                    <label for="ID" class="mt-3 mb-2 fw-bold text-dark">ID</label>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="number" id="ID" name="ID" class="text-center border border-primary border-3" placeholder="Please enter ID" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- input for date -->
+                <div class="col-sm-12 col-lg-4">
+                    <label for="date" class="mt-3 mb-2 fw-bold text-dark">DATE</label>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="date" id="date" name="date" class="text-center border border-primary border-3" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- input for code system  -->
+                <div class="col-sm-12 col-lg-4">
+                    <label for="code-system" class="mt-3 mb-2 fw-bold text-dark"> CODE SYSTEM</label>
+                    <div class="row">
+                        <div class="col-12">
+                            <select name="code-system" id="code-system" class="text-center border border-primary border-3">
+                                <option value="european-standard-1">European Standard 1</option>
+                                <option value="european-standard-2">European Standard 2</option>
+                                <option value="european-standard-3">European Standard 3</option>
+                                <option value="european-standard-4">European Standard 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- add condition button added -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <button id="add-condition" class="btn btn-lg btn-primary fw-bold mb-5">ADD CONDITION</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container for details data  -->
     <div id="inspection-details-data">
 
     </div>
 
+    <!-- link javascript -->
     <script src="script.js"></script>
 </body>
 </html>
