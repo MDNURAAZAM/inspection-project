@@ -26,6 +26,8 @@ document.getElementById('add-condition').addEventListener('click', () => {
                     <h2><span class='text-primary fw-bold'>CODE SYSTEM: </span> ${codeSystemValue.toUpperCase()}</h2>
                 </div>
             </div>
+
+            <!-- inspection details part  -->
             <div class="row fs-2 ms-5 mt-5 ">
                 <div class="col-12">
                     <label for="station" class="fw-bold me-5">STATION : </label>
@@ -82,7 +84,7 @@ document.getElementById('add-condition').addEventListener('click', () => {
                     <label for="quant-2" class="fw-bold">QUANT 2:</label>
                     <input type="number" id="quant-2" name="quant-2" class="text-center border border-primary border-3">
                 </div>
-
+                <!-- save/update delete button created -->
             <div class="row mt-4 text-center">
                 <div class="col-12 mt-5">
                     <button class="btn btn-lg btn-primary me-5" onclick="saveContent()">SAVE</button>
@@ -107,9 +109,12 @@ const removeContent = () => {
 
 //handling save click and update click
 const saveContent = () => { 
+    // getting the parent div node 
     const parentContent = event.target.parentNode.parentNode.parentNode.parentNode;
     const inputFields = parentContent.getElementsByTagName('input');
     const dropdownFields = parentContent.getElementsByTagName('select');
+
+    // disable/enable input fields 
     if (event.target.textContent == "SAVE") {
         for (input of inputFields) {
             input.setAttribute("disabled", "true");
