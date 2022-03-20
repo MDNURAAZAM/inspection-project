@@ -85,7 +85,7 @@ document.getElementById('add-condition').addEventListener('click', () => {
 
             <div class="row mt-4 text-center">
                 <div class="col-12 mt-5">
-                    <button class="btn btn-lg btn-success me-5" onclick="saveContent()">SAVE</button>
+                    <button class="btn btn-lg btn-primary me-5" onclick="saveContent()">SAVE</button>
                     <button class="btn btn-lg btn-danger" onclick="removeContent()" >REMOVE</button>
                 </div>
             </div>
